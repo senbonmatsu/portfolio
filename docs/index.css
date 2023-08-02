@@ -4,6 +4,7 @@ nav {
     background-color: #CAE3DA;
     padding-top: 5px;
     box-sizing: border-box;
+    position: fixed;
     }
 
     ul.menu {
@@ -31,6 +32,10 @@ nav {
         text-align: center;
     }
 
+    #profile-content img{
+        border-radius: 20%;
+    }
+
     a {
     display: block;
     text-decoration: none;
@@ -41,6 +46,8 @@ nav {
     h3.content-title{
         border-bottom: 5px solid #CAE3DA ;
     }
+
+
     
     footer{
     text-align: center;
