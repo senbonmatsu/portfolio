@@ -7,47 +7,60 @@
     <title>ポートフォリオサイト</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous"></script>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
+            <a class="navbar-brand fugaz-one-regular" href="#">Portfolio<img class="dogleg" src="肉球のアイコン3.png"/></a>
             <div class="row">
-              <ul class="menu">
-                <div class="col-md-4">
-                  <li class="menu-main"><a href="#">Portfolio</a></li>
-                </div>
-                <div class="col-md-2">
-                  <li class="menu"><a href="#about">About</a></li>
-                </div>
-                <div class="col-md-2">
-                  <li class="menu"><a href="#skill">Skill</a></li>
-                </div>
-                <div class="col-md-2">
-                  <li class="menu"><a href="#works">Works</a></li>
-                </div>
-                <div class="col-md-2">
-                  <li class="menu"><a href="#contact">Contact</a></li>
-                </div>
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skill">Skill</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#works">Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
               </ul>
-            </div>
           </div>
         </div>
       </nav>
     </header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 profile-content">
+          <img src="./IMG_3010.jpeg" width="50%" class="profile-photo">
+        </div>
+        <div class="row">
+          <div class="col-lg-12 profile-name">
+            <h1 class="fugaz-one-regular">Chihiro Senbonmatsu</h1>
+          </div>
+          <div class="col-lg-12 profile-university">
+            <h4 class="fugaz-one-regular">Musashino University</h4>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <h3 id="about" class="content-title">About</h3>
-      <div class="row row-cols-lg-2  align-items-center" id="profile-content">
-        <div class="col-xl-6 ">
-          <img src="./IMG_3010.jpeg" width="50%" class="profile">
-        </div>
-        <div class="col-xl-6">
-          <table class="table table-striped ">
+      <div class="row align-items-center" id="about-content">
+        <div class="col-md-12">
+          <table class="table table-striped">
             <tbody>
               <tr>
                 <th scope="col">名前</th>
-                <td >千本松　千尋</td>
+                <td>千本松　千尋</td>
               </tr>
               <tr>
                 <th scope="col">所属</th>
@@ -55,7 +68,7 @@
               </tr>
               <tr>
                 <th scope="col">趣味</th>
-                <td>犬の散歩</td>
+                <td>犬と遊ぶこと　愛犬が生きがいです</td>
               </tr>
               <tr>
                 <th scope="col">目標</th>
@@ -67,67 +80,108 @@
       </div>
     </div>
     <div class="container">
-      <h3 id="skill" class="content-title">Skill</h3>
-      <table class="table table-striped">
-        <tbody>
-          <tr>
-            <th scope="col">得意な言語</th>
-            <td >python</td>
-          </tr>
-          <tr>
-            <th scope="col">習得中の言語</th>
-            <td >html,css,javascript,SQL</td>
-          </tr>
-          <tr>
-            <th scope="col">経験のあるフレームワーク</th>
-            <td >Flask,Vue.js</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="container">
-      <h3 id="works" class="content-title">Works</h3>
-      <div class="row row-cols-1 row-cols-lg-2 g-4" id="cards">
-        <div class="card" style="width: 18rem; ">
-          <img src="mirai.jpg" class="card-img-top" alt="自立分散協調農業データベースシステムの実現">
-          <div class="card-body">
-            <h5 class="card-title">未来創造プロジェクト</h5>
-            <p class="card-text">未来創造プロジェクトの授業で行っている研究です。農家同士の協力、情報共有を通じて、
-              人・農機・土地・時間・情報のシェアリングにより効率的な農業資源の活用を目指しています。</p>
-            <a href="https://docs.google.com/presentation/d/1yOrjGWiMFKzRU1nBEgdVe9fX1cn_ITzlxWKU2Olsp-w/edit?usp=sharing" class="btn btn-primary"  target="_blank">詳しく見る</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img src="talkgacha.jpg" class="card-img-top" alt="自立分散協調農業データベースシステムの実現">
-          <div class="card-body">
-            <h5 class="card-title">トークがちゃ</h5>
-            <p class="card-text">2023年3月　技育キャンプハッカソン　マンスリーハッカソンvol.1で3人で共同制作した作品です。オンラインでも会話がしやすいように
-              トークテーマを提案してくれるアプリです。私は音声から自己紹介を生成する機能とデザインの一部を担当しました。
-            </p>
-            <a href="https://musashino-my.sharepoint.com/:p:/g/personal/s2222020_stu_musashino-u_ac_jp/EX7BLf2NkHNBrGMrf3e6q9gBAHezTS521xMBn2U535Y5SQ?e=E3K6AG" class="btn btn-primary"  target="_blank">詳しく見る</a>
-          </div>
-        </div>
+      <h3 id="skill" class="content-title" >Skill</h3>
+      <div class="row align-items-center" id="skill-content">
+        <div class="col-md-12">
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <th scope="col">得意な言語</th>
+                <td >python,html,css</td>
+              </tr>
+              <tr>
+                <th scope="col">習得中の言語</th>
+                <td >javascript,SQL</td>
+              </tr>
+              <tr>
+                <th scope="col">経験のあるフレームワーク</th>
+                <td >Flask,Vue.js</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <!-- <table class="table table-striped">
-        <tbody>
-          <tr>
-            <td scope="col">技育キャンプハッカソン　2022年12月　「初めてのハッカソン」vol9　「hair×care」</td>
-          </tr>
-          <tr>
-            <td scope="col">未来創造成果発表会　<strong>企業賞　(関彰商事様)</strong></td>
-          </tr>
-          <tr>
-            <td scope="col">技育キャンプハッカソン　2023年3月　マンスリーハッカソンvol.1　「トークがちゃ」<strong>努力賞</strong></td>
-          </tr>
-        </tbody> -->
-      <!-- </table> -->
+    </div>
+    <div class="container works">
+      <h3 id="works" class="content-title">Works</h3>
+        <div class="row" id="works-content">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="row">
+              <div class="col-md-2">
+                <button class="carousel-control-prev arrow" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span aria-hidden="true"><img src="icon_left_arrow.png"/></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+              </div>
+              <div class="col-md-8">
+                <div class="carousel-inner">
+                  <div class="carousel-item active ">
+                    <div class="image-container" >
+                      <img src="mirai2.png" class="d-block" alt="...">
+                      <div class="overlay">
+                        <div class="overlay-text">
+                          <h2>自律分散協調型農業データベースシステムの実現</h2>
+                          <p>大学で行っている研究です。農家同士の協力、情報共有を通じて、
+                            人・農機・土地・時間・情報のシェアリングにより効率的な農業資源の活用を目指しています。学内の発表では関彰商事株式会社賞を受賞しました。
+                            また、農家同士のマッチングについてJSISE学生研究発表会で発表しました。</p>
+                            <div class="detail-link">
+                              <a href="https://docs.google.com/presentation/d/1yOrjGWiMFKzRU1nBEgdVe9fX1cn_ITzlxWKU2Olsp-w/edit?usp=sharing" target="_blank" class="detail">詳しく見る</a>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="image-container" >
+                      <img src="talkgacha.png" class="d-block " alt="...">
+                      <div class="overlay">
+                        <div class="overlay-text">
+                          <h2>トークがちゃ</h2>
+                          <p>2023年3月　技育キャンプハッカソン　マンスリーハッカソンvol.1で3人で共同制作した作品です。オンラインでも会話がしやすいように
+                            トークテーマを提案してくれるアプリです。私は音声から自己紹介を生成する機能とデザインの一部を担当しました。</p>
+                            <div class="detail-link">
+                              <a href="https://musashino-my.sharepoint.com/:p:/g/personal/s2222020_stu_musashino-u_ac_jp/EX7BLf2NkHNBrGMrf3e6q9gBAHezTS521xMBn2U535Y5SQ?e=E3K6AG" target="_blank" class="detail">詳しく見る</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <button class="carousel-control-next arrow" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span aria-hidden="true"><img src="icon_right_arrow.png"/></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
     <div class="container">
       <h3 id="contact" class="content-title">Contact</h3>
-      <a href="https://twitter.com/9Bfx9" target="_blank"><img src="Twitter.jpeg" width="10%"></a>
+      <div class="row">
+        <div class="col-md-2">
+          <a href="https://twitter.com/9Bfx9" target="_blank"><img src="twitter.png"></a>
+        </div>
+        <div class="col-md-3 twitter-id">
+          <p>@9Bfx9</p>
+        </div>
+        <div class="col-md-2">
+          <img src="mail.png">
+        </div>
+        <div class="col-md-5 twitter-id">
+          <p>s2222020@stu.musashino-u.ac.jp</p>
+        </div>
+      </div>
     </div>
-    <footer>©︎2023 Chihiro Senbonmatsu</footer>
+    <footer>©︎2024 Chihiro Senbonmatsu </footer> 
   </body>
 </html>
 

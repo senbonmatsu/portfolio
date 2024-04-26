@@ -1,55 +1,172 @@
+.nav {
+    --bs-nav-link-color: #545B5A;
+    --bs-nav-link-hover-color: #545B5A;
+}
+
+.table{
+    --bs-table-striped-bg:#C0DFD9;
+}
+
+.navbar {
+    position: fixed;
+}
+
+.carousel-indicators {
+    position: relative;
+    margin: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #545B5A;
+    width: 3vw;
+    height: 2vh
+}
+
+body{
+    background-color: #E9ECE6;
+}
+
 nav {
     width: 100%;
-    height: 70px;
-    background-color: #CAE3DA;
+    height: 10vh;
+    background-color:#C0DFD9;
     padding-top: 5px;
     box-sizing: border-box;
-    position: fixed;
+    z-index: 2;
+    .container-fluid{
+        background-color: #C0DFD9;
     }
+}
 
-    ul.menu {
+li.nav-item {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    list-style: none;
-    margin: auto;
-    }
-    
+    justify-content: center;
+    color:#545B5A
+}
 
-    li.menu-main{
-        font-size: 120%;
-        list-style: none;
-        margin: auto;
-        float: left;
-        text-align: left;
-    }
-
-    li.menu{
-        list-style: none;
-        margin: auto;
-        float: left;
-    }
-    
-    #profile-content{
-        text-align: center;
-    }
-
-    #profile-content img{
-        border-radius: 20%;
-    }
-
-    a {
-    display: block;
-    text-decoration: none;
-    color: #000009;
-    margin-right: 35px;
-    }
-
-    h3.content-title{
-        border-bottom: 5px solid #CAE3DA ;
-    }
+.dogleg{
+    width: 20%;
+}
 
 
-    
-    footer{
+.navbar-brand{
+    font-size: 150%;
+}
+
+.profile-content{
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+    margin-top:10vh
+}
+
+.profile-photo{
+    border-radius: 50%;
+    width: 25vh;
+}
+
+.profile-name{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vh;
+    margin-top:5vh;
+}
+
+.profile-university{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+
+#about-content{
     text-align: center;
-    }
+    padding: 0vh 10vw;
+}
+
+#skill-content{
+    text-align: center;
+    padding: 0vh 10vw;
+}
+
+table>tbody>tr>td{
+    text-align: justify;
+}
+
+#works-content{
+    text-align: center;
+}
+
+.detail {
+display: block;
+text-decoration: none;
+border-bottom: 1px solid ;
+}
+
+.detail-link{
+    padding:0 15vw;
+}
+
+h3.content-title{
+    border-bottom: 5px solid #CAE3DA ;
+    margin-bottom: 5vh;
+}
+
+.works{
+    z-index: 1;
+}
+
+.d-block{
+    width: 100%;
+}
     
+
+.twitter-id{
+    padding: 5vh 0;
+}
+
+footer{
+text-align: center;
+}
+    
+.fugaz-one-regular {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/*  */
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  .image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease;
+  }
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  .overlay-text {
+    padding: 20px;
+  }
